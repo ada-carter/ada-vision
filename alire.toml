@@ -1,0 +1,18 @@
+[package]
+name = "ada-vision-unit"
+version = "1.0.0"
+descr = "Unit testing library for computer vision in Ada"
+license = "MIT"
+authors = ["Your Name <you@example.com>"]
+
+[project]
+with = ["gnatcoll-json >= 2.0.0"]
+
+[sources]
+path = "src"
+
+[binaries.ada-vision-unit-cli]
+main = "ada_vision_unit_cli.adb"
+
+[binaries.ada-vision-unit-test-runner]
+main = "ada_vision_unit_test_runner.adb"
